@@ -6,5 +6,5 @@
  * @param state: Result to be set, one of ["NOT_BUILT", "UNSTABLE", "SUCCESS", "FAILURE", "ABORTED"]
  */
 def call(String state) {
-    currentBuild.rawBuild.@result = hudson.model.Result.metaClass.getAttribute(hudson.model.Result, state)
+	currentBuild.rawBuild.@result = hudson.model.Result.metaClass.getAttribute(hudson.model.Result, state)
 }
